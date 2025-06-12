@@ -1,0 +1,277 @@
+
+        
+ body {
+    font-family: 'Arial', sans-serif;
+    background: #2c3e50; /* Azul oscuro */
+    color: white; /* Color del texto */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Cambio de dirección a columna */
+    height: 100vh;
+    margin-top: 10px;
+    position: relative;
+    left: 400px; /* Ajusta este valor según sea necesario */
+}
+
+    
+h1 {
+    font-size: 48px; /* Tamaño más grande */
+    color: #ff69b4; /* Color rosado */
+    font-family: 'Roboto', sans-serif; /* Puedes cambiar la fuente según tus preferencias */
+    letter-spacing: 3px; /* Espaciado entre letras para un efecto más "robótico" */
+    margin-top: 20px; /* Espacio superior */
+    position: absolute; /* Posición absoluta */
+    top: 40px; /* Distancia desde el borde superior */
+    left: -90px; /* Distancia desde el borde izquierdo */
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; /* Efecto de neón */
+}
+
+
+        .button-container {
+            position: absolute;
+            top: 50%; /* Posición vertical en el centro */
+            left: 50px; /* Distancia desde el borde izquierdo */
+            transform: translateY(-50%); /* Centrar verticalmente */
+        }
+        
+        .button {
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            background-color: #3498db; /* Color azul metálico */
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            position: relative;
+            overflow: hidden; /* Para ocultar las luces que sobresalen */
+            box-shadow: 0 0 20px #3498db, 0 0 40px #3498db, 0 0 60px #3498db; /* Sombras de neón */
+        }
+        
+        .button.active {
+            background-color: #28A745; /* Color verde cuando está activo */
+            box-shadow: 0 0 20px #28A745, 0 0 40px #28A745, 0 0 60px #28A745;
+        }
+        
+        .button.inactive {
+            background-color: #DC3545; /* Color rojo cuando está inactivo */
+            box-shadow: 0 0 20px #DC3545, 0 0 40px #DC3545, 0 0 60px #DC3545;
+        }
+        
+
+        .logo {
+            width: 500px; /* Ancho de la imagen aumentado */
+            height: auto; /* Altura ajustada automáticamente */
+            margin-bottom: 10px; /* Ajuste para mover la imagen arriba del título */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombras simple en la imagen */
+        }
+        .topo-antena{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 4px solid;
+            box-shadow: inset 0px 3px 0px 1px white;
+            background: #a1becd;
+        }
+        .centro-antena{
+            height: 90px;
+            width: 7px;
+            background: #a1becd;
+            transform: perspective(57px) rotateX(39deg);
+            border: 2px solid;
+            border-bottom: unset;
+            position: relative;
+            bottom: 26px;
+            box-shadow: inset 0px 2px 0px 2px white;
+
+        }
+        .base-antena{
+            width: 50px;
+            height: 56px;
+            background: #a1becd;
+            z-index: 1;
+            border-radius: 50%;
+            border: 7px solid;
+            box-shadow: inset 0px -4px 0px 7px white;
+
+        }
+        .cabeca{
+            height: 481px;
+            width: 250px;
+            background: #a1becd;
+            border-top-right-radius: 150px;
+            border-top-left-radius: 150px;
+            border: 6px solid;
+            z-index: 2;
+            position: relative;
+            bottom: 50px;
+            box-shadow: inset 16px 6px 0px 0px white, inset -16px 6px 0px 0px white;
+        }
+        .contorno-olhos{
+            height: 135px;
+            border: 11px solid;
+            width: 137%;
+            border-radius: 81px;
+            position: relative;
+            right: 55px;
+            background: #a1becd;
+            top: 36%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 17px 0px 0px 0px white, inset -17px 0px 0px 0px white;
+        }
+        .container-olhos{
+            width: 94%;
+            height: 82%;
+            background-color: black;
+            border-radius: 81px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .olho-esquerdo{
+            height: 97%;
+            width: 125px;
+            background: #f9f791;
+            border-radius: 48px;
+            margin: 0 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 1px 7px 0px #00000026;
+
+        }
+        .olho-esquerdo>.iris{
+            width: 25px;
+            height: 25px;
+            background-color: black;
+            position: relative;
+            right: 5px;
+            bottom: 3px;
+        }
+        .olho-direito>.iris{
+            width: 25px;
+            height: 25px;
+            background-color: black;
+            position: relative;
+            left: 7px;
+            bottom: 3px;
+        }
+        .olho-direito{
+            height: 97%;
+            width: 125px;
+            background: #f9f791;
+            border-radius: 48px;
+            margin: 0 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset -1px 7px 0px #00000026;
+        }
+        .centro-olhos{
+            width: 60px;
+            position: absolute;
+            z-index: 3;
+            background-color: black;
+            height: 60px;
+            transform: rotate(45deg);
+            top: -30px;
+        }
+        .boca{
+            height: 79px;
+            border: 11px solid;
+            width: 82%;
+            margin: auto;
+            position: relative;
+            top: 210px;
+            border-top: 4px solid;
+            border-radius: 47px;
+            background-color: #f9f792;
+            box-shadow: inset 0px 5px 0px 2px #00000047;
+            display: flex;
+            overflow: hidden;
+        }
+        .linha-v1{
+            height: 100%;
+            width: 4px;
+            background-color: rgb(0, 0, 0);
+            margin: 0 24px;
+        }
+        .linha-v2{
+            height: 100%;
+            width: 4px;
+            background-color: black;
+            margin: 0 10px;
+        }
+        .linha-v3{
+            height: 100%;
+            width: 4px;
+            background-color: black;
+            margin: 0 20px;
+        }
+        .linha-v4{
+            height: 100%;
+            width: 4px;
+            background-color: black;
+            margin: 0 10px;
+        }
+        .linha-v5{
+            height: 100%;
+            width: 4px;
+            background-color: black;
+            margin: 0 21px;
+        }
+        .linha-h1 {
+            width: 187%;
+            height: 100px;
+            border: 3px solid black; /* Color de borde negro */
+            position: absolute;
+            left: -80px;
+            bottom: 46px;
+            border-radius: 93%;
+        }
+        
+        .linha-h2 {
+            width: 181%;
+            height: 100px;
+            border: 3px solid black; /* Color de borde negro */
+            position: absolute;
+            left: -80px;
+            bottom: 14px;
+            border-radius: 93%;
+        
+        }
+        @keyframes waveAnimation {
+            0% { transform: translateY(-2); }
+            50% { transform: translateY(-4px); } /* Mover hacia arriba la primera mitad de la animación */
+            100% { transform: translateY(-3); } /* Volver a la posición inicial al final de la animación */
+        }
+        
+        .voice-animation:nth-child(1) {
+            animation-name: waveAnimation;
+            animation-duration: 0.5s; /* Duración de la animación */
+            animation-iteration-count: 5; /* Repetir la animación indefinidamente */
+            animation-timing-function: ease-in-out; /* Función de temporización */
+        }
+        
+        .voice-animation:nth-child(2) {
+            animation-name: waveAnimation-reverse; /* Nombre de la animación invertida */
+            animation-duration: 0.5s; /* Duración de la animación */
+            animation-iteration-count: 5; /* Repetir la animación indefinidamente */
+            animation-timing-function: ease-in-out; /* Función de temporización */
+        }
+        
+        @keyframes waveAnimation-reverse {
+            0% { transform: translateY(2); }
+            50% { transform: translateY(4px); } /* Mover hacia abajo la primera mitad de la animación */
+            100% { transform: translateY(3); } /* Volver a la posición inicial al final de la animación */
+        }
+        
+        
+                
+        

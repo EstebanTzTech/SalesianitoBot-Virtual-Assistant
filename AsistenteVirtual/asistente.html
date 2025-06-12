@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Asistente Virtual - SalesianitoBOT</title>
+   
+
+
+    
+   <script src="C:\Users\Esteban Tz\Desktop\AsistenteVirtual\annyang.min.js"></script>
+   <script src="C:\Users\Esteban Tz\Desktop\AsistenteVirtual\asistente.js"></script>
+   
+</head>
+<body2>
+  <h1>
+    Salesianito Bender
+  </h1>
+    <div class="button-container">
+        <button id="speakButton" class="button inactive">Pulsar para hablar</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const button = document.getElementById('speakButton');
+            let isActive = false;
+
+            button.addEventListener('click', () => {
+                isActive = !isActive;
+                if (isActive) {
+                    button.classList.add('active');
+                    button.classList.remove('inactive');
+                    button.textContent = 'Botón activo';
+                } else {
+                    button.classList.add('inactive');
+                    button.classList.remove('active');
+                    button.textContent = 'Botón inactivo';
+                }
+            });
+
+            // Inicializar el estado del botón
+            button.classList.add('inactive');
+        });
+    </script>
+</body2>
+<body>
+     
+
+    <div class="topo-antena"></div>
+    <div class="centro-antena"></div>
+    <div class="base-antena"></div>
+    <div class="cabeca">
+        <div class="contorno-olhos">
+            <div class="container-olhos">
+                <div class="olho-esquerdo">
+                    <div class="iris"></div>
+                </div>
+                <div class="centro-olhos"></div>
+                <div class="olho-direito">
+                    <div class="iris"></div>
+                </div>
+            </div>
+        </div>
+        <div class="boca">
+            <div class="linha-h1"></div>
+            <div class="linha-h2"></div>
+            <div class="linha-v1"></div>
+            <div class="linha-v2"></div>
+            <div class="linha-v3"></div>
+            <div class="linha-v4"></div>
+            <div class="linha-v5"></div>
+        </div>
+    </div>
+    
+</body>
+
+
+</html>
