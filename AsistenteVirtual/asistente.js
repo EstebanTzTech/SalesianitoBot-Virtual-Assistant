@@ -159,7 +159,7 @@ function escribirCartaAgradecimiento() {
 }
 
 function obtenerClima() {
-    const apiKey = '335271f3f8c268cd02ba92a0a1a7f2dd';
+    const apiKey = '';
     const ciudad = 'Cochabamba,BO';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`;
 
